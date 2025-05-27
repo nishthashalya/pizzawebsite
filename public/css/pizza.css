@@ -1,0 +1,95 @@
+body{
+    background:linear-gradient(yellow, white);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+ul{
+    position: absolute;
+    z-index: 5;
+    top: 20px;
+    left: 5px;
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+ul li a {
+    color: black;
+    background-color: rgba(255, 255, 255, 0.7);
+    font-weight: 500;
+    font-size: 10px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 10px;
+    padding: 8px 16px;
+    border-radius: 6px;
+    transition: background 0.3s ease;
+}
+
+ul li a :hover{
+    background-color: blanchedalmond;
+}
+
+.intro {
+  position: relative;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-size: 50px;
+  text-align: center;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.intro::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(https://www.kingarthurbaking.com/sites/default/files/styles/featured_image_2x/public/2022-03/Easiest-Pizza_22-2_11.jpg?itok=MlGWxXsI);
+  background-size: cover;
+  background-position: center;
+  opacity: 0.7;
+  z-index: 0;
+  margin-bottom: 100px;
+}
+
+.intro * {
+  position: relative;
+  z-index: 1;
+}
+
+
+button{
+    display: block;
+  margin: 30px auto;
+  padding: 10px 20px;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 8px;
+  margin-bottom: 100px;
+}
+button:hover{
+    color: rgb(186, 241, 122);
+    background-color: rgb(158, 250, 150);
+}
+
+button:active{
+    background-color: rgb(20, 164, 75);
+}
+
+footer{
+    text-align: center;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 0.9rem;
+
+}
